@@ -15,6 +15,7 @@ const msg2 = document.querySelector('#msg-2');
 
 
 
+
 weatherForm.addEventListener('submit', (e)=>{
     e.preventDefault();
     const location = search.value
