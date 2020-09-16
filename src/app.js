@@ -105,6 +105,6 @@ app.get('*', (req, res)=>{
         errorMessage: 'Page not found'
     });
 })
-app.listen(3000, ()=>{
-    console.log('My server has started at port 3000');
+app.listen(port, ()=>{
+    console.log('My server has started at port port');
 })
