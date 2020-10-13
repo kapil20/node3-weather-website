@@ -1,7 +1,8 @@
 const path = require('path')
 const express = require('express')
-const app = express() // express is not an object, it is a function
 const hbs = require('hbs')
+const app = express() // express is not an object, it is a function
+
 
 const geocode = require('./utils/geocode.js')
 const forecast = require('./utils/forecast.js')
@@ -33,6 +34,7 @@ app.get('', (req, res)=>{
         name: 'created by Kapil Kumar'
     });
 })
+
 
 app.get('/about', (req, res)=>{
     res.render('about', {
